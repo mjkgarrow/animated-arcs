@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: rgb(30 41 59);
+        }
+
+        main {
+            color: gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100svh;
+            cursor: pointer;
+        }
+
+        #textContainer {
+            height: 20%;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+        }
+
+        #muteText {
+            text-align: center;
+        }
+
+        #canvasContainer {
+            height: 80%;
+        }
+
+        #canvas {
+            height: 100%;
+            margin: auto;
+            aspect-ratio: 1/1;
+            cursor: pointer;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div id='textContainer'>
+            <p id='muteText'>Click anywhere to play audio</p>
+        </div>
+        <div id='canvasContainer'>
+            <canvas id="canvas"></canvas>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
