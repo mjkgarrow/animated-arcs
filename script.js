@@ -35,6 +35,7 @@ const settings = {
     loopTime: 150,
     pulseDuration: 2000,
     soundEnabled: false,
+    colour: '#6b21b6'
 }
 
 // Toggle to mute/play audio
@@ -113,7 +114,7 @@ const playSound = (index) => {
 arcs = new Array(settings.numberOfArcs).fill().map((value, index) => {
     // Finds the spacing required between each arc
     const radius = settings.centerArcRadius + (((settings.lineLength / 2) - settings.centerArcRadius) / 13) * index
-    const colour = "#5b21b6"
+    const colour = settings.colour
 
     // Calculate the velocity for each arc to complete their number of loops in 150 seconds
     const velocity = (2 * Math.PI * (settings.loops - index)) / settings.loopTime
